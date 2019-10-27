@@ -67,9 +67,6 @@ export const pageQuery = graphql`
           title
           excerpt
           id
-          featured_media {
-            source_url
-          }
           categories {
             name
           }

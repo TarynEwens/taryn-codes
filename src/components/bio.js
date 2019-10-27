@@ -38,10 +38,10 @@ function Bio() {
               }}
             />
             <p>
-              Created by <strong>{author}</strong> who lives and works in Denver, CO. <br />
+              Created by <strong>{author}</strong> who lives and works in Sydney, Australia. <br />
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                You should follow her on Twitter
               </a>
             </p>
           </div>

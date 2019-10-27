@@ -70,9 +70,6 @@ export const pageQuery = graphql`
       modified
       excerpt
       id
-      featured_media {
-        source_url
-      }
       categories {
         name
         slug

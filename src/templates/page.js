@@ -43,9 +43,6 @@ export const pageQuery = graphql`
       slug
       title
       id
-      # featured_media {
-      #   source_url
-      # }
       content
     }
   }
