@@ -13,9 +13,8 @@
     "url": "git@github.com:justinwhall/gatsby-wordpress-netlify-starter.git"
   },
   "scripts": {
-    "develop": "DEPLOY_ENV=lbn_published_production gatsby develop",
-    "build": "gatsby build",
     "develop": "gatsby develop",
+    "build": "gatsby build",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve"
