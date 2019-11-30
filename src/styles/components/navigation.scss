@@ -1,0 +1,44 @@
+/*
+-------------------------------------------------
+Navigation
+-------------------------------------------------
+ */
+
+ header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  align-items: center;
+  display: flex;
+}
+
+.header__logoText {
+  color: var(--textStandard);
+  font-size: 2rem;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+.header__logoText > span {
+ color: var(--blueDark);
+ font-weight: bold;
+}
+
+.header__nav {
+  align-items: center;
+  display: flex;
+}
+
+.header__nav > a {
+ color: var(--textStandard);
+ font-size: 1.25rem;
+ margin-left: 2rem;
+ text-decoration: none;
+}
+
+.header__nav > a:hover {
+ color: var(--blueDark);
+ text-decoration: underline;
+}
