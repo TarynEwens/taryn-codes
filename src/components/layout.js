@@ -7,7 +7,7 @@ const Layout = (props) => {
     const rootPath = `${__PATH_PREFIX__}/`
 
     return (
-      <div>
+      <div class="internalBody">
         <Navigation/>
         <main>{children}</main>
         <Footer/>

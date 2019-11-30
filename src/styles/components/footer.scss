@@ -3,3 +3,37 @@
 Footer
 -------------------------------------------------
  */
+
+footer {
+  background-color: var(--pinkDark);
+  display: flex;
+  flex-shrink: 0;
+  height: 150px;
+  justify-content: flex-end;
+  padding: 1.5rem 2rem;
+
+  a {
+    color: var(--textStandard);
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.footer__right {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav > a {
+  margin-left: 2rem;
+}

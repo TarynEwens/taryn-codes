@@ -1,11 +1,11 @@
 
 @import '/components/navigation';
+@import '/components/footer';
 
 body {
   background-color: lavenderblush;
   color: #231f20;
   font-family: 'Open Sans', sans-serif;
-  margin: 2rem;
 
   /* Colours */
   --textStandard: #231f20;
@@ -14,5 +14,16 @@ body {
   --blueDark: #427586;
   --blueLight: #8ECAE4;
   --yellow: #FFFCB5;
+}
+
+.internalBody {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+  margin: 2rem;
 }
 
