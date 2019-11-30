@@ -7,10 +7,17 @@ Footer
 footer {
   background-color: var(--pinkDark);
   display: flex;
+  flex-direction:column;
   flex-shrink: 0;
-  height: 150px;
+  height: 250px;
   justify-content: flex-end;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
+
+  @media only screen and (min-width: 1021px) {
+    height: 150px;
+    flex-direction: row;
+  }
+
 
   a {
     color: var(--textStandard);
@@ -22,18 +29,47 @@ footer {
   }
 }
 
+.footer__nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.footer__nav li {
+  margin: 0 1rem;
+}
+
 .footer__right {
-  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (min-width: 1021px) {
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }
 
 .footer__nav {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  @media only screen and (min-width: 1021px) {
+    max-width: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
 }
 
-.footer__nav > a {
-  margin-left: 2rem;
+.footer__copyright {
+  max-width: 75vw;
+
+  @media only screen and (min-width: 1021px) {
+    max-width: none;
+  }
 }

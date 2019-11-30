@@ -1,6 +1,7 @@
 import React from "react"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
+import Intro from "../components/intro"
 
 const Layout = (props) => {
     const { location, title, children } = props
@@ -9,7 +10,14 @@ const Layout = (props) => {
     return (
       <div class="internalBody">
         <Navigation/>
-        <main>{children}</main>
+        <main>
+          <aside>
+            <Intro/>
+          </aside>{/* {children} */}
+          <section class="contentArea">
+            {children}
+          </section>
+        </main>
         <Footer/>
       </div>
     )

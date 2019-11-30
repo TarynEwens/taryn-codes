@@ -1,39 +1,19 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 const BlogIndex = (props) => {
   const {
     title,
-    postPrefix,
   } = props.data.site.siteMetadata;
-  const posts = props.data.allWordpressPost.edges;
+  const page = props.data.wordpressPage;
 
   return (
     <Layout location={props.location} title={title}>
-      <SEO title="All posts" />
-      {/* <Bio /> */}
-      {posts.map(({ node }) => {
-        return (
-          <div key={node.slug}>
-            <h3>
-              <Link to={`${postPrefix}/${node.slug}`}>
-                {node.title}
-              </Link>
-            </h3>
-            <small>{node.date}</small>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: node.excerpt,
-              }}
-            />
-          </div>
-        )
-      })}
+      <SEO title={page.title} />
+      <div dangerouslySetInnerHTML={{__html: page.content}} class="home"></div>
     </Layout>
   )
 }
@@ -48,26 +28,9 @@ export const pageQuery = graphql`
         postPrefix
       }
     }
-    allWordpressPost(
-       filter: {
-         fields: {
-           deploy: {eq: true}
-         }
-       }
-        limit: 100
-      ) {
-      edges {
-        node {
-          date(formatString: "MMMM DD, YYYY")
-          slug
-          title
-          excerpt
-          id
-          categories {
-            name
-          }
-        }
-      }
+    wordpressPage(id: { eq: "42837dc0-93a2-5c4e-8936-f3c7cf9f1e33" }) {
+      title
+      content
     }
   }
 `

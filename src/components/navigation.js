@@ -9,8 +9,6 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
-import { rhythm } from "../utils/typography"
-
 const Navigation = (props) => {
   const { location, title, children } = props
   const rootPath = `${__PATH_PREFIX__}/`
@@ -69,7 +67,7 @@ const Navigation = (props) => {
 
 const navigationQuery = graphql`
   query NavigationQuery {
-    avatar: file(absolutePath: { regex: "/css-taryn.png/" }) {
+    avatar: file(absolutePath: { regex: "/icons/css-taryn.png/" }) {
       childImageSharp {
         fixed(width: 100, height: 100) {
           ...GatsbyImageSharpFixed
