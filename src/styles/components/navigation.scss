@@ -7,7 +7,16 @@ Navigation
  header {
    display: flex;
    justify-content: space-between;
-   padding: 2rem;
+   flex-direction: column;
+   padding: 1.5rem;
+
+   @media only screen and (min-width: 760px) {
+     flex-direction: row;
+   }
+
+   @media only screen and (mix-width: 1160px) {
+    padding: 2rem;
+   }
  }
 
  .header__logo {
