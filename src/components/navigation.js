@@ -19,104 +19,47 @@ const Navigation = (props) => {
       query={navigationQuery}
       render={data => {
         return (
-          <header
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-            }}
+          <header>
+          <div className="header__logo"
           >
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-            }}
-            className="header__logo"
-          >
-          <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={`Cartoon avatar of Taryn Ewens`}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
             <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
               to={`/`}
             >
-              Taryn.Codes
+              <Image
+                fixed={data.avatar.childImageSharp.fixed}
+                alt={'Cartoon avatar of Taryn Ewens'}
+              />
+            </Link>
+            <Link
+              to={`/`}
+              className={"header__logoText"}
+            >
+              Taryn<span>.Codes</span>
             </Link>
           </div>
 
-          <nav
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-            }}
-            className="header__nav"
-          >
+          <nav className="header__nav">
             <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
               to={`/about`}
             >
               About
             </Link>
             <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
               to={`/projets`}
             >
               Projects
             </Link>
             <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
-              to={`/art`}
-            >
-              Art
-            </Link>
-            <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
               to={`/writing`}
             >
               Writing
             </Link>
             <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
               to={`/contact`}
             >
               Contact
             </Link>
           </nav>
-            
-            
           </header>
         )
       }}
@@ -128,7 +71,7 @@ const navigationQuery = graphql`
   query NavigationQuery {
     avatar: file(absolutePath: { regex: "/css-taryn.png/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 100, height: 100) {
           ...GatsbyImageSharpFixed
         }
       }

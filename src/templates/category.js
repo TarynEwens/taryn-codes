@@ -41,11 +41,7 @@ const CategoryTemplate = (props) => {
             </div>
           )
         })}
-        <hr
-        style={{
-          marginBottom: rhythm(1),
-        }}
-        />
+        <hr/>
       <Bio />
     </Layout>
   )
