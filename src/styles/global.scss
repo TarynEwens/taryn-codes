@@ -3,6 +3,9 @@
 @import '/components/footer';
 @import '/components/intro';
 @import '/components/home';
+@import '/components/about';
+@import '/components/experience';
+@import '/components/contact';
 
 body {
   background-color: #f8f4f4;
@@ -47,7 +50,49 @@ h1, h2, h3, p {
   font-family: 'Open Sans', sans-serif;
 }
 
-h2 {
+h2, h3 {
   font-weight: normal;
 }
+
+a {
+  color: var(--textStandard);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--blueDark);
+}
+
+.button {
+  color: var(--textStandard);
+  padding: 0.5rem 0.75rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  transition: ease-in-out 300ms;
+  white-space: nowrap;
+  width: fit-content;
+  text-decoration: none;
+ }
+
+ .button__primary {
+   background-color: var(--pinkDark);
+ }
+
+ .button__primary:hover {
+  color: var(--textStandard);
+  background-color: var(--blueLight);
+}
+
+ .button__secondary {
+  background-color: var(--pinkLight);
+ }
+
+ .button__secondary:hover {
+  color: var(--textStandard);
+  background-color: var(--blueLight);
+ }
+
+ .contentArea h1 {
+   display: none;
+ }
 

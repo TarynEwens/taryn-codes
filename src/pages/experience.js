@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutMe = (props) => {
+const Experience = (props) => {
   const {
     title,
   } = props.data.site.siteMetadata;
@@ -13,18 +13,12 @@ const AboutMe = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title={page.title} />
-      <div dangerouslySetInnerHTML={{__html: page.content}} class="about"></div>
-      <Link
-        to={`/experience#contentArea`}
-        className={"button button__primary button__primary--about"}
-      >
-        View my resume
-      </Link>
+      <div dangerouslySetInnerHTML={{__html: page.content}} class="experience"></div>
     </Layout>
   )
 }
 
-export default AboutMe
+export default Experience
 
 export const pageQuery = graphql`
   query {
@@ -34,7 +28,7 @@ export const pageQuery = graphql`
         postPrefix
       }
     }
-    wordpressPage(id: { eq: "c8d14712-9acb-5fac-b773-df4de67a02f2" }) {
+    wordpressPage(id: { eq: "5734a220-5a94-573c-b242-1f94cfe767d7" }) {
       title
       content
     }

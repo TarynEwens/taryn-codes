@@ -1,0 +1,38 @@
+/*
+-------------------------------------------------
+About me page
+-------------------------------------------------
+*/
+
+.about {
+  margin-bottom: 3rem;
+
+  img {
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+
+    @media only screen and (min-width: 400px) {
+      max-width: 48%;
+    }
+  }
+
+  img:nth-child(2) {
+    display: none;
+
+    @media only screen and (min-width: 400px) {
+      display: inline-block;
+    }
+  }
+
+  ul {
+    margin-left: 1.25rem;
+  }
+}
+
+.button.button__primary--about {
+  display: block;
+  margin-bottom: 6rem;
+}
+
+

@@ -29,6 +29,11 @@ Navigation
    font-size: 2rem;
    margin-left: 1rem;
    text-transform: uppercase;
+   text-decoration: none;
+ }
+
+ .header__logoText:hover {
+  color: inherit;
  }
 
  .header__logoText > span {

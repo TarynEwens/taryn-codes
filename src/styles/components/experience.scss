@@ -1,0 +1,16 @@
+/*
+-------------------------------------------------
+Experience / Resume page
+-------------------------------------------------
+ */
+
+.experience p:nth-child(odd),
+.education p:nth-child(odd) {
+  margin-bottom: 0.25rem;
+}
+
+.experience p:nth-child(even),
+.education p:nth-child(even) {
+  font-size: 0.8rem;
+}
+

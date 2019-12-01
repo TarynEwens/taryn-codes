@@ -17,16 +17,6 @@ footer {
     height: 150px;
     flex-direction: row;
   }
-
-
-  a {
-    color: var(--textStandard);
-    text-decoration: underline;
-  }
-
-  a:hover {
-    color: var(--blueDark);
-  }
 }
 
 .footer__nav ul {

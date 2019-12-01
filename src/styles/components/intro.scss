@@ -2,59 +2,41 @@
 -------------------------------------------------
 Intro
 -------------------------------------------------
- */
+*/
 
- .intro {
-  max-width: 27rem;
- }
+.otherPage .intro {
+  display: none;
 
- .intro h1 {
-   margin-top: 0;
-   margin-bottom: 1rem;
- }
-
- .intro h2 {
-   margin-top: 0;
-   margin-bottom: 3rem;
- }
-
- .intro p {
-   margin-bottom: 3rem;
- }
-
- .intro__buttonGroup {
-   display: flex;
-   flex-direction: column;
-   margin-bottom: 2rem;
-
-
-   @media only screen and (min-width: 460px) {
-    flex-direction: row;
-   }
- }
-
- .intro__button {
-  color: var(--textStandard);
-  padding: 0.5rem 0.75rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  transition: ease-in-out 300ms;
-  white-space: nowrap;
-  width: fit-content;
- }
-
- .intro__buttonPrimary {
-   background-color: var(--pinkDark);
- }
-
- .intro__buttonPrimary:hover {
-  background-color: var(--blueLight);
+  @media only screen and (min-width: 600px) {
+    display: block;
+  }
 }
 
- .intro__buttonSecondary {
-  background-color: var(--pinkLight);
- }
+.intro {
+max-width: 27rem;
+}
 
- .intro__buttonSecondary:hover {
-  background-color: var(--blueLight);
- }
+.intro h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.intro h2 {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.intro p {
+  margin-bottom: 3rem;
+}
+
+.intro__buttonGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+
+  @media only screen and (min-width: 460px) {
+  flex-direction: row;
+  }
+}
