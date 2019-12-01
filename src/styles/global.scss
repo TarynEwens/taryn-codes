@@ -6,6 +6,7 @@
 @import '/components/about';
 @import '/components/experience';
 @import '/components/contact';
+@import '/components/quotes';
 
 body {
   background-color: #f8f4f4;
@@ -45,12 +46,12 @@ main {
   }
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   color: #231f20;
   font-family: 'Open Sans', sans-serif;
 }
 
-h2, h3 {
+h2, h3, h4 {
   font-weight: normal;
 }
 

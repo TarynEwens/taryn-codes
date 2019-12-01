@@ -1,21 +1,23 @@
 /*
 -------------------------------------------------
-Footer
+Footer component
 -------------------------------------------------
  */
 
 footer {
   background-color: var(--pinkLight);
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   flex-shrink: 0;
-  height: 250px;
+  min-height: 250px;
   justify-content: flex-end;
   padding: 1.5rem 1rem;
 
   @media only screen and (min-width: 1160px) {
-    height: 150px;
+    min-height: 150px;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
   }
 }
 

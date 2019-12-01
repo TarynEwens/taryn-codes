@@ -7,6 +7,7 @@
 
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
+import Quotes from "../components/quotes"
 
 const Footer = (props) => {
   const { location, title, children } = props
@@ -17,7 +18,9 @@ const Footer = (props) => {
       render={data => {
         return (
           <footer>
-            <div class="footer__left"></div>
+            <div class="footer__left">
+              <Quotes/>
+            </div>
             <div class="footer__right">
               <nav className="footer__nav">
                 <ul>
