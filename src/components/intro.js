@@ -20,6 +20,10 @@ const Intro = (props) => {
             <h1>Front-End<br/>Web Developer,</h1>
             <h2>CSS fan, design enthusiast,<br/>and fluffy doggo lover.</h2>
             <p>My name is Taryn and I’m an ex-confectioner turned web developer in Sydney, Australia. I love creating art with CSS and dabbling in design, but I'm most passionate about accessibility and diversity in the tech industry.</p>
+            <div class="intro__buttonGroup">
+              <Link to="/aboutme/" class="intro__button intro__buttonPrimary">Learn more about me</Link>
+              <Link to="/writing/" class="intro__button intro__buttonSecondary">Check out my writing</Link>
+            </div>
           </div>
         )
       }}
