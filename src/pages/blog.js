@@ -16,7 +16,7 @@ const BlogIndex = (props) => {
       <SEO title="All posts" />
       {posts.map(({ node }) => {
         return (
-          <div key={node.slug}>
+          <div key={node.slug} class="blog">
             <h3>
               <Link to={`${postPrefix}/${node.slug}`}>
                 {node.title}
@@ -31,6 +31,12 @@ const BlogIndex = (props) => {
           </div>
         )
       })}
+      <div>
+        <h2>My writing on other sites</h2>
+        <ul class="blog__externalList">
+          <li><a href="https://medium.com/finder-tech/analysing-our-engineering-teams-key-values-e9f79dd4391e" rel="noopener noreferrer" target="_blank">Analysing our engineering teams key values</a></li>
+        </ul>
+      </div>
     </Layout>
   )
 }
