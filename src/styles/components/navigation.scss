@@ -24,6 +24,16 @@ header {
   display: flex;
 }
 
+.header__logo .gatsby-image-wrapper {
+  width: 5rem !important;
+  height: 5rem !important;
+
+  @media only screen and (min-width: 760px) {
+    width: 6rem !important;
+    height: 6rem !important;
+  }
+}
+
 .header__logoText {
   color: var(--textStandard);
   font-size: 2rem;
@@ -44,7 +54,7 @@ font-weight: bold;
 .header__nav {
   align-items: center;
   display: flex;
-  margin-left: 5.5rem;
+  margin-left: 4rem;
   margin-top: -1.5rem;
 
   @media only screen and (min-width: 760px) {
