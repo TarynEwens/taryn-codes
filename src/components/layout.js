@@ -13,7 +13,7 @@ const Layout = (props) => {
         <main>
           <aside>
             <Intro/>
-          </aside>{/* {children} */}
+          </aside>
           <section class="contentArea">
             {children}
           </section>

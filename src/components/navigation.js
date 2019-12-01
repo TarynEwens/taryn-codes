@@ -42,13 +42,13 @@ const Navigation = (props) => {
             >
               About
             </Link>
-            <Link
+            {/* <Link
               to={`/projets`}
             >
               Projects
-            </Link>
+            </Link> */}
             <Link
-              to={`/writing`}
+              to={`/blog`}
             >
               Writing
             </Link>
