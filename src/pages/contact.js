@@ -12,7 +12,7 @@ const Contact = (props) => {
 
   return (
     <Layout location={props.location} title={title}>
-      <SEO title='Contact' />
+      <SEO title={page.title} />
       <div dangerouslySetInnerHTML={{__html: page.content}} class="contact"></div>
     </Layout>
   )
@@ -28,7 +28,7 @@ export const pageQuery = graphql`
         postPrefix
       }
     }
-    wordpressPage(id: { eq: "012929af-78e8-5015-a26e-def8d16fd5e" }) {
+    wordpressPage(id: { eq: "012929af-78e8-5015-a26e-def8d16fd5ee" }) {
       title
       content
     }
