@@ -55,7 +55,7 @@ font-weight: bold;
   align-items: center;
   display: flex;
   margin-left: 4rem;
-  margin-top: -1.5rem;
+  margin-top: -0.5rem;
 
   @media only screen and (min-width: 760px) {
     margin-left: 0;
@@ -65,9 +65,13 @@ font-weight: bold;
 
 .header__nav > a {
   color: var(--textStandard);
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-left: 2rem;
   text-decoration: none;
+
+  @media only screen and (min-width: 760px) {
+    font-size: 1.25rem;
+  }
 }
 
 .header__nav > a:hover {
