@@ -75,7 +75,7 @@ a:hover {
   color: var(--textStandard);
 }
 
-.button {
+a.button {
   color: var(--textStandard);
   padding: 0.5rem 0.75rem;
   margin-right: 2rem;
@@ -86,22 +86,22 @@ a:hover {
   text-decoration: none;
  }
 
- .button__primary {
+ a.button__primary {
    background-color: var(--pinkDark);
    color: var(--textStandard);
  }
 
- .button__primary:hover {
+ a.button__primary:hover {
   color: var(--textStandard);
   background-color: var(--blueLight);
 }
 
- .button__secondary {
+ a.button__secondary {
   background-color: var(--pinkLight);
   color: var(--textStandard);
  }
 
- .button__secondary:hover {
+ a.button__secondary:hover {
   color: var(--textStandard);
   background-color: var(--blueLight);
  }
