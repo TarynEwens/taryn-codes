@@ -19,6 +19,17 @@ const CategoryTemplate = (props) => {
         description={`Archive for ${props.pageContext.name} category`}
       />
       <h1>Archive | {props.pageContext.name}</h1>
+        <div className="blog">
+          <h2>Articles and Notes</h2>
+          <p>Just things from my brain that I like to write down.</p>
+          <h3>Filter by category: </h3>
+          <ul className="blog__categories">
+            <li><a href="/blog">All</a></li>
+            <li><a href="/category/coding">Coding</a></li>
+            <li><a href="/category/diversity-and-inclusion">Diversity and Inclusion</a></li>
+          </ul>
+          <hr/>
+        </div>
         {posts.map(({ node }) => {
           return (
             <div key={node.slug}>
@@ -41,6 +52,12 @@ const CategoryTemplate = (props) => {
           )
         })}
         <hr/>
+      <div>
+        <h2>My writing on other sites</h2>
+        <ul className="blog__externalList">
+          <li><a href="https://medium.com/finder-tech/analysing-our-engineering-teams-key-values-e9f79dd4391e" rel="noopener noreferrer" target="_blank">Analysing our engineering teams key values</a></li>
+        </ul>
+      </div>
     </Layout>
   )
 }
