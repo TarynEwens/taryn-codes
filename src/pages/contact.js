@@ -28,7 +28,7 @@ export const pageQuery = graphql`
         postPrefix
       }
     }
-    wordpressPage(id: { eq: "012929af-78e8-5015-a26e-def8d16fd5ee" }) {
+    wordpressPage(id: { eq: "bcd89a76-4c61-53ce-bc47-33ac25c99b97" }) {
       title
       content
     }
