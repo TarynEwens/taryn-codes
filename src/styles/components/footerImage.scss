@@ -1,0 +1,16 @@
+/*
+-------------------------------------------------
+Footer image component
+-------------------------------------------------
+*/
+
+.footer__image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__image img {
+  max-height: 8rem;
+  margin: 0;
+  margin-top: -8rem;
+}

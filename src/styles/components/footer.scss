@@ -2,16 +2,24 @@
 -------------------------------------------------
 Footer component
 -------------------------------------------------
- */
+*/
 
 footer {
   background-color: var(--pinkLight);
+  min-height: 250px;
+  padding: 1.5rem 1rem;
+
+  @media only screen and (min-width: 1160px) {
+    min-height: 150px;
+    padding: 1.5rem;
+  }
+}
+
+.footer__fullWidth {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  min-height: 250px;
   justify-content: flex-end;
-  padding: 1.5rem 1rem;
 
   @media only screen and (min-width: 1160px) {
     min-height: 150px;
@@ -32,6 +40,10 @@ footer {
 
 .footer__nav li {
   margin: 0 1rem;
+}
+
+.footer__nav li:last-of-type {
+  margin-right: 0;
 }
 
 .footer__right {
