@@ -15,7 +15,7 @@ const AboutMe = (props) => {
       <SEO title={page.title} />
       <div dangerouslySetInnerHTML={{__html: page.content}} className="about"></div>
       <Link
-        to={`/experience#contentArea`}
+        to={`/experience`}
         className={"button button__primary button__primary--about"}
       >
         View my resume
