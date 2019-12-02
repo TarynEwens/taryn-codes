@@ -16,13 +16,13 @@ const Intro = (props) => {
       query={introQuery}
       render={data => {
         return (
-          <div class="intro">
+          <div className="intro">
             <h1>Front-End<br/>Web Developer,</h1>
             <h2>CSS fan, design enthusiast,<br/>and fluffy doggo lover.</h2>
             <p>My name is Taryn and I’m an ex-confectioner turned web developer in Sydney, Australia. I love creating art with CSS and dabbling in design, but I'm most passionate about accessibility and diversity in the tech industry.</p>
-            <div class="intro__buttonGroup">
-              <a href="/about/" class="button button__primary">Learn more about me</a>
-              <a href="/blog/" class="button button__secondary">Check out my writing</a>
+            <div className="intro__buttonGroup">
+              <a href="/about/" className="button button__primary">Learn more about me</a>
+              <a href="/blog/" className="button button__secondary">Check out my writing</a>
             </div>
           </div>
         )

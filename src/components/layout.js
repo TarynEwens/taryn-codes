@@ -16,13 +16,13 @@ const Layout = (props) => {
     }
 
     return (
-      <div class="internalBody">
+      <div className="internalBody">
         <Navigation/>
-        <main class={ pageClass }>
+        <main className={ pageClass }>
           <aside>
             <Intro/>
           </aside>
-          <section id="contentArea" class="contentArea">
+          <section id="contentArea" className="contentArea">
             {children}
           </section>
         </main>

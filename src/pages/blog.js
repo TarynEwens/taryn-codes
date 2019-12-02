@@ -14,11 +14,11 @@ const BlogIndex = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title="All posts" />
-      <div class="blog">
+      <div className="blog">
         <h2>Articles and Notes</h2>
         <p>Just things from my brain that I like to write down.</p>
         <h3>Filter by category: </h3>
-        <ul class="blog__categories">
+        <ul className="blog__categories">
           <li><a href="/category/coding">Coding</a></li>
           <li><a href="/category/diversity-and-inclusion">Diversity and Inclusion</a></li>
         </ul>
@@ -26,7 +26,7 @@ const BlogIndex = (props) => {
       </div>
       {posts.slice(0).reverse().map(({ node }) => {
         return (
-          <div key={node.slug} class="blog">
+          <div key={node.slug} className="blog">
             <h3>
               <Link to={`${postPrefix}/${node.slug}`}>
                 {node.title}
@@ -44,7 +44,7 @@ const BlogIndex = (props) => {
       <hr/>
       <div>
         <h2>My writing on other sites</h2>
-        <ul class="blog__externalList">
+        <ul className="blog__externalList">
           <li><a href="https://medium.com/finder-tech/analysing-our-engineering-teams-key-values-e9f79dd4391e" rel="noopener noreferrer" target="_blank">Analysing our engineering teams key values</a></li>
         </ul>
       </div>

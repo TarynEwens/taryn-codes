@@ -13,7 +13,7 @@ const AboutMe = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title={page.title} />
-      <div dangerouslySetInnerHTML={{__html: page.content}} class="about"></div>
+      <div dangerouslySetInnerHTML={{__html: page.content}} className="about"></div>
       <Link
         to={`/experience#contentArea`}
         className={"button button__primary button__primary--about"}

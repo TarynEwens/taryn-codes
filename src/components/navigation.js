@@ -36,27 +36,37 @@ const Navigation = (props) => {
             </Link>
           </div>
 
-          <nav className="header__nav">
-            <Link
-              to={`/about`}
-            >
-              About
-            </Link>
-            {/* <Link
-              to={`/projets`}
-            >
-              Projects
-            </Link> */}
-            <Link
-              to={`/blog`}
-            >
-              Writing
-            </Link>
-            <Link
-              to={`/contact`}
-            >
-              Contact
-            </Link>
+
+          <nav id="navigation" className="header__nav">
+            {/* <button aria-expanded="false" aria-controls="menu">
+              <svg id="i-menu" aria-label="Menu" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6.25%">
+                <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24"></path>
+              </svg>
+            </button> */}
+
+            <ul id="menu">
+              <li>
+                <Link
+                to={`/about`}
+              >
+                About
+              </Link>
+              </li>
+              <li>
+                <Link
+                to={`/blog`}
+                >
+                Writing
+              </Link>
+              </li>
+              <li>
+                <Link
+                to={`/contact`}
+                >
+                Contact
+                </Link>
+              </li>
+            </ul>
           </nav>
           </header>
         )
@@ -64,6 +74,17 @@ const Navigation = (props) => {
     />
   )
 }
+
+// const toggleMenu = document.querySelector(".header__nav > button");
+// console.log(toggleMenu);
+// const menu = document.querySelector(".header__nav > ul");
+
+
+// toggleMenu.addEventListener("click", function () {
+//   const open = JSON.parse(toggleMenu.getAttribute("aria-expanded"));
+//   toggleMenu.setAttribute("aria-expanded", !open);
+//   menu.hidden = !menu.hidden;
+// });
 
 const navigationQuery = graphql`
   query NavigationQuery {

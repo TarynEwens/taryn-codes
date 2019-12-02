@@ -41,7 +41,7 @@ const Quotes = (props) => {
   }
 
   return (
-    <div class="footer__quotes">
+    <div className="footer__quotes">
       <h3>Taryn's quote of the page:</h3>
       <p>"{quoteOfTheDay}"</p>
     </div>

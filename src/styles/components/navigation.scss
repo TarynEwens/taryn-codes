@@ -17,6 +17,7 @@ header {
   @media only screen and (mix-width: 1160px) {
   padding: 2rem;
   }
+
 }
 
 .header__logo {
@@ -63,7 +64,13 @@ font-weight: bold;
   }
 }
 
-.header__nav > a {
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.header__nav a {
   color: var(--textStandard);
   font-size: 1rem;
   margin-left: 2rem;

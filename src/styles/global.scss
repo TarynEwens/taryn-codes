@@ -88,6 +88,7 @@ a:hover {
 
  .button__primary {
    background-color: var(--pinkDark);
+   color: var(--textStandard);
  }
 
  .button__primary:hover {
@@ -97,6 +98,7 @@ a:hover {
 
  .button__secondary {
   background-color: var(--pinkLight);
+  color: var(--textStandard);
  }
 
  .button__secondary:hover {

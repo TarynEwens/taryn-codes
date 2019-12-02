@@ -13,7 +13,7 @@ const Contact = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title={page.title} />
-      <div dangerouslySetInnerHTML={{__html: page.content}} class="contact"></div>
+      <div dangerouslySetInnerHTML={{__html: page.content}} className="contact"></div>
     </Layout>
   )
 }

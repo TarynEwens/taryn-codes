@@ -18,10 +18,10 @@ const Footer = (props) => {
       render={data => {
         return (
           <footer>
-            <div class="footer__left">
+            <div className="footer__left">
               <Quotes/>
             </div>
-            <div class="footer__right">
+            <div className="footer__right">
               <nav className="footer__nav">
                 <ul>
                   <li><a href="https://twitter.com/TarynEwens">Twitter</a></li>
@@ -31,7 +31,7 @@ const Footer = (props) => {
                   <li><a href="https://codepen.io/tarynewens">CodePen</a></li>
                 </ul>
               </nav>
-              <div class="footer__copyright">
+              <div className="footer__copyright">
                 Designed and built by Taryn Ewens - an experiment with <a href="https://www.gatsbyjs.org">Gatsby</a>
                 | © {new Date().getFullYear()}
               </div>

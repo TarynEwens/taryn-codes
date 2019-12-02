@@ -13,7 +13,7 @@ const Home = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title={page.title} />
-      <div dangerouslySetInnerHTML={{__html: page.content}} class="home"></div>
+      <div dangerouslySetInnerHTML={{__html: page.content}} className="home"></div>
     </Layout>
   )
 }
