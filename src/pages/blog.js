@@ -14,7 +14,17 @@ const BlogIndex = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title="All posts" />
-      {posts.map(({ node }) => {
+      <div class="blog">
+        <h2>Articles and Notes</h2>
+        <p>Just things from my brain that I like to write down.</p>
+        <h3>Filter by category: </h3>
+        <ul class="blog__categories">
+          <li><a href="/category/coding">Coding</a></li>
+          <li><a href="/category/diversity-and-inclusion">Diversity and Inclusion</a></li>
+        </ul>
+        <hr/>
+      </div>
+      {posts.slice(0).reverse().map(({ node }) => {
         return (
           <div key={node.slug} class="blog">
             <h3>
@@ -31,6 +41,7 @@ const BlogIndex = (props) => {
           </div>
         )
       })}
+      <hr/>
       <div>
         <h2>My writing on other sites</h2>
         <ul class="blog__externalList">

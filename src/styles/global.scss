@@ -66,6 +66,15 @@ a:hover {
   color: var(--blueDark);
 }
 
+.contentArea a {
+  color: var(--blueDark);
+  text-decoration: underline;
+}
+
+.contentArea a:hover {
+  color: var(--textStandard);
+}
+
 .button {
   color: var(--textStandard);
   padding: 0.5rem 0.75rem;
@@ -97,5 +106,15 @@ a:hover {
 
  .contentArea h1 {
    display: none;
+ }
+
+ .contentArea .blogPost h1 {
+   display: inline-block;
+   font-weight: normal;
+   font-size: 1.75rem;
+ }
+
+ blockquote {
+   border-left: 0.32813rem solid var(--pinkLight);
  }
 

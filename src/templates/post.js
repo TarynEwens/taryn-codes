@@ -21,31 +21,34 @@ const PostTemplate = (props) => {
         title={post.title}
         description={post.excerpt}
       />
-        <h1>{post.title} </h1>
-        {featuredImage &&
-              <img src={featuredImage} alt={post.title} className="featured-image" />
-        }
-        <div
-          className="post-meta"
+        <div class="blogPost">
+          <h1>{post.title} </h1>
+          {featuredImage &&
+                <img src={featuredImage} alt={post.title} className="featured-image" />
+          }
+          <div
+            className="post-meta"
+            style={{
+              marginBottom: rhythm(1),
+            }}
+          >
+            <div className="post-date">{post.date}</div>
+            <p>Categories: <Link
+              className="cat-link"
+              to={`/category/${post.categories[0].slug}`}
+            >
+              {post.categories[0].name}{' '}
+            </Link>
+            </p>
+          </div>
+
+          <div dangerouslySetInnerHTML={{ __html: post.content }} />
+          <hr
           style={{
             marginBottom: rhythm(1),
           }}
-        >
-          <div className="post-date">{post.date}</div>
-          <Link
-            className="cat-link"
-            to={`/category/${post.categories[0].slug}`}
-          >
-            {post.categories[0].name}{' '}
-          </Link>
+          />
         </div>
-
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-        <hr
-        style={{
-          marginBottom: rhythm(1),
-        }}
-        />
     </Layout>
   )
 
