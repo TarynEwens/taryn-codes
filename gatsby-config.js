@@ -57,6 +57,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-116364128-1`,
+        icon: 'src/static/favicon.ico',
       },
     },
     `gatsby-plugin-offline`,
