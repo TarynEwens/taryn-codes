@@ -25,7 +25,7 @@ const BlogIndex = (props) => {
         </ul>
         <hr/>
       </div>
-      {posts.slice(0).reverse().map(({ node }) => {
+      {posts.slice(0).map(({ node }) => {
         return (
           <div key={node.slug} className="blog">
             <h3>
