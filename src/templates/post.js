@@ -22,7 +22,7 @@ const PostTemplate = (props) => {
         description={post.excerpt}
       />
         <div className="blogPost">
-          <h1>{post.title} </h1>
+          <h2>{post.title} </h2>
           {featuredImage &&
                 <img src={featuredImage} alt={post.title} className="featured-image" />
           }
