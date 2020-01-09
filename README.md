@@ -1,25 +1,14 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
+# Portfolio website for Taryn Ewens, Front-End Developer in Sydney, Australia.
 
-### 👋 Looking for a way to support live previews with Gatsby + WordPress?
-[Check this repo out](https://github.com/justinwhall/wordpress-gatsby-preview-starter)!
+This repo is for my porfolio site found at [taryn.codes](https://www.taryn.codes). I used a base of @justinwhall's [Gatsby](https://github.com/gatsbyjs/gatsby/) + Headless WordPress + Netlify Starter for this project.
 
-# Gatsby + Headless WordPress + Netlify Starter
-
-A starter skeleton that leverages the WordPress API for [Gatsby](https://github.com/gatsbyjs/gatsby/). Support for Continuous integration with Netlify. Publishing posts call the Netlify build hook. Deploy to Netlify stage or production enviroment when updating a WordPress post or page.
+It includes support for continuous integration with Netlify. Publishing posts call the Netlify build hook. Deploy to Netlify stage or production enviroment when updating a WordPress post or page.
 
 ## Dependencies
 
 * [WP Buildhook Deploy](https://github.com/justinwhall/littlebot-netlify) installed and activated on the source WordPress installation.
 
 #### This Project was forked from the default [Gatsby Starter](https://github.com/gatsbyjs/gatsby-starter-blog)
-
-
-### [Production Demo](https://gatsby-wordpress-netlify-production.netlify.com/)
-### [Stage Demo](https://gatsby-wordpress-netlify-stage.netlify.com/)
 
 ## Getting Started
 1. Fork Gatsby WordPress Netlify
@@ -122,6 +111,4 @@ allWordpressPost {
       }
     }
 ```
-
-* Finally, you'll probably want to update the SiteConfig to match your info, because right now it has mine. 🤠
 
