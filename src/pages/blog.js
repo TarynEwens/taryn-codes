@@ -17,7 +17,7 @@ const BlogIndex = (props) => {
       <div className="blog">
         <h2>Articles and Notes</h2>
         <p>Just things from my brain that I like to write down.</p>
-        <h3>Filter by category: </h3>
+        <h3 class="blog__filters">Filter by category: </h3>
         <ul className="blog__categories">
           <li><a href="/blog">All</a></li>
           <li><a href="/category/coding">Coding</a></li>

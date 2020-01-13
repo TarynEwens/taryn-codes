@@ -121,3 +121,24 @@ a.button {
    border-left: 0.32813rem solid var(--pinkLight);
  }
 
+ .otherPage {
+  @media only screen and (max-width: 600px) {
+    h2 {
+      margin-top: 0;
+    }
+
+    .blog__filters {
+      margin-top: 1rem;
+    }
+
+    .blog__categories {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin-bottom: 1rem;
+      margin-top: 2.5rem;
+      text-transform: none;
+    }
+  }
+}
