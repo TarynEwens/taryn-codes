@@ -3,9 +3,8 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Intro from "../components/intro"
 
-const Home = (props) => {
+const InstagramLinks = (props) => {
   const {
     title,
   } = props.data.site.siteMetadata;
@@ -14,12 +13,13 @@ const Home = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title={page.title} />
-      <Intro/>
+      <h1>{page.title}</h1>
+      <div dangerouslySetInnerHTML={{__html: page.content}}></div>
     </Layout>
   )
 }
 
-export default Home
+export default InstagramLinks
 
 export const pageQuery = graphql`
   query {
@@ -29,7 +29,7 @@ export const pageQuery = graphql`
         postPrefix
       }
     }
-    wordpressPage(id: { eq: "8579f4aa-787a-5c5a-bc63-459008782287" }) {
+    wordpressPage(id: { eq: "250cbabc-ade4-5c5a-9b34-208fc70f3f83" }) {
       title
       content
     }
