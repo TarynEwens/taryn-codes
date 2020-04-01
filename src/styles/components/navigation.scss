@@ -47,15 +47,21 @@ header {
 
 .header__logoText {
   color: var(--textStandard);
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
-  margin: 0 1rem;
   text-transform: uppercase;
   text-decoration: none;
 
   @media only screen and (min-width: 760px) {
     font-size: 2rem;
   }
+
+  .gatsby-image-wrapper {
+    margin: 0 1rem;
+  }
 }
+
 
 .header__logoText:hover {
 color: inherit;

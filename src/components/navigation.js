@@ -23,21 +23,13 @@ const Navigation = (props) => {
             <Link
               to={`/`}
               className={"header__logoText"}
+              aria-label={"Taryn.Codes"}
             >
               Taryn
-            </Link>
-            <Link
-              to={`/`}
-            >
               <Image
                 fixed={data.avatar.childImageSharp.fixed}
                 alt={'Cartoon avatar of Taryn Ewens'}
               />
-            </Link>
-            <Link
-              to={`/`}
-              className={"header__logoText"}
-            >
               Codes
             </Link>
           </div>
