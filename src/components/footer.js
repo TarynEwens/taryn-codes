@@ -18,7 +18,7 @@ const Footer = (props) => {
       query={footerQuery}
       render={data => {
         return (
-          <footer>
+          <footer className="content">
             <FooterImage/>
             <div className="footer__fullWidth">
               <div className="footer__left">

@@ -4,39 +4,95 @@ Intro component
 -------------------------------------------------
 */
 
-.otherPage .intro {
-  display: none;
+.intro {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 
-  @media only screen and (min-width: 600px) {
-    display: block;
+  @media only screen and (min-width: 960px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
-.intro {
-max-width: 27rem;
+.intro div {
+  flex-grow: 2;
+  max-width: 36rem;
+}
+
+.intro aside {
+  width: 100%;
+
+  @media only screen and (min-width: 720px) {
+    width: 21rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media only screen and (min-width:  960px) {
+    flex-direction: column;
+  }
 }
 
 .intro h1 {
   margin-top: 0;
   margin-bottom: 1rem;
+
+  @media only screen and (min-width: 720px) {
+    font-size: 2.75rem !important;
+  }
 }
 
 .intro h2 {
   margin-top: 0;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 720px) {
+    font-size: 1.25rem;
+  }
 }
 
 .intro p {
+  font-size: 1rem;
   margin-bottom: 3rem;
+  max-width: 60ch;
+
+  @media only screen and (max-width: 720px) {
+    font-size: 1.125rem;
+  }
 }
 
-.intro__buttonGroup {
+.intro img {
+  width: 100%;
+
+  @media only screen and (min-width: 720px) {
+    width: 21rem;
+    height: 13rem;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+  }
+}
+
+.intro img:last-of-type {
+  display: none;
+
+  @media only screen and (min-width: 720px) {
+    display: inline-block;
+  }
+}
+
+.intro__ctaGroup {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 
-
-  @media only screen and (min-width: 460px) {
+  @media only screen and (min-width: 600px) {
   flex-direction: row;
+  }
+
+  a {
+    width: fit-content;
+    margin-bottom: 2.5rem;
   }
 }

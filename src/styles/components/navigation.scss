@@ -5,24 +5,34 @@ Navigation
 */
 
 header {
+  align-items: center;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  padding: 1.5rem;
+  padding-top: 1rem;
 
   @media only screen and (min-width: 760px) {
-    flex-direction: row;
+    padding-bottom: 0.5rem;
+    padding-top: 3rem;
   }
-
-  @media only screen and (mix-width: 1160px) {
-  padding: 2rem;
-  }
-
 }
 
 .header__logo {
   align-items: center;
   display: flex;
+  margin-bottom: 1rem;
+
+  @media only screen and (min-width: 760px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.header__logo a:hover {
+  border-bottom: 0;
+  color: var(--blueDark);
+}
+
+.header__logo img {
+  margin-bottom: 0;
 }
 
 .header__logo .gatsby-image-wrapper {
@@ -30,17 +40,21 @@ header {
   height: 5rem !important;
 
   @media only screen and (min-width: 760px) {
-    width: 6rem !important;
-    height: 6rem !important;
+    width: 10rem !important;
+    height: 10rem !important;
   }
 }
 
 .header__logoText {
   color: var(--textStandard);
-  font-size: 2rem;
-  margin-left: 1rem;
+  font-size: 1.5rem;
+  margin: 0 1rem;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media only screen and (min-width: 760px) {
+    font-size: 2rem;
+  }
 }
 
 .header__logoText:hover {
@@ -53,14 +67,20 @@ font-weight: bold;
 }
 
 .header__nav {
+  border-bottom: 1px solid var(--textStandard);
   align-items: center;
   display: flex;
-  margin-left: 4rem;
-  margin-top: -0.5rem;
+  justify-content: center;
+  width: 100%;
 
   @media only screen and (min-width: 760px) {
-    margin-left: 0;
-    margin-top: 0;
+    border-bottom: 0;
+    margin-bottom: 2rem;
+
+  }
+
+  @media only screen and (min-width: 960px) {
+    margin-bottom: 6rem;
   }
 }
 
@@ -73,15 +93,31 @@ font-weight: bold;
 .header__nav a {
   color: var(--textStandard);
   font-size: 1rem;
-  margin-left: 2rem;
+  margin: 0 0.75rem;
   text-decoration: none;
 
   @media only screen and (min-width: 760px) {
     font-size: 1.25rem;
+    margin: 0 1.5rem;
   }
 }
 
 .header__nav > a:hover {
   color: var(--blueDark);
   text-decoration: underline;
+}
+
+.navSeparator {
+  display: none;
+
+  @media only screen and (min-width: 760px) {
+    display: block;
+    width: inherit;
+    border-bottom: 1px solid var(--textStandard);
+    margin-top: -0.75rem;
+  }
+
+  @media only screen and (min-width: 960px) {
+    width: 6rem;
+  }
 }

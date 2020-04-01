@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Intro from "../components/intro"
 
 const Home = (props) => {
   const {
@@ -13,7 +14,8 @@ const Home = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title={page.title} />
-      <div dangerouslySetInnerHTML={{__html: page.content}} className="home"></div>
+      <Intro/>
+      {/* <div dangerouslySetInnerHTML={{__html: page.content}} className="home"></div> */}
     </Layout>
   )
 }

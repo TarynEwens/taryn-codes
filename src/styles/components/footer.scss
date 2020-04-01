@@ -5,9 +5,11 @@ Footer component
 */
 
 footer {
-  background-color: var(--pinkLight);
+  border-top: 1px solid var(--textStandard);
+  // background-color: var(--pinkLight);
   min-height: 250px;
   padding: 1.5rem 1rem;
+  margin-bottom: 0;
 
   @media only screen and (min-width: 1160px) {
     min-height: 150px;
@@ -25,7 +27,6 @@ footer {
     min-height: 150px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.5rem;
   }
 }
 
@@ -78,4 +79,11 @@ footer {
     max-width: none;
     text-align: left;
   }
+}
+
+.footer__quotes {
+  border-left: 0;
+  font-style: normal;
+  padding: 0;
+  font-size: 1rem;
 }

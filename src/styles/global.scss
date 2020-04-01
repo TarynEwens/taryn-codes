@@ -12,17 +12,15 @@
 @import '/components/footerImage';
 
 body {
-  background-color: #f8f4f4;
+  background-color: #fffffe;
   color: var(--textStandard);
   font-family: 'Open Sans', sans-serif;
 
   /* Colours */
-  --textStandard: #231f20;
-  --pinkLight: #FAD3DB;
-  --pinkDark: #FF9CAC;
-  --blueDark: #427586;
-  --blueLight: #8ECAE4;
-  --yellow: #FFFCB5;
+  --textStandard: #2d334a;
+  --pinkDark: #f582ae;
+  --blueDark: #001858;
+  --blueLight: #8bd3dd;
 }
 
 .internalBody {
@@ -31,22 +29,17 @@ body {
   min-height: 100vh;
 }
 
-main {
-  flex: 1 0 auto;
-  margin: 1.5rem;
-  margin-bottom: 6rem;
+.content {
+  margin: 1rem;
 
-  @media only screen and (min-width: 1160px) {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin: 3rem 9.5rem 3rem 9.5rem;
+  @media only screen and (min-width: 972px) {
+    width: 972px;
+    margin: 0 auto;
   }
 }
 
 .contentArea {
-  @media only screen and (min-width: 1160px) {
-    margin-left: 5rem;
-  }
+  margin-bottom: 8rem;
 }
 
 h1, h2, h3, h4, p {
@@ -61,10 +54,13 @@ h2, h3, h4 {
 a {
   color: var(--textStandard);
   text-decoration: underline;
+
 }
 
 a:hover {
   color: var(--blueDark);
+  text-decoration: none;
+  border-bottom: 2px solid var(--blueLight);
 }
 
 .contentArea a {
@@ -76,45 +72,28 @@ a:hover {
   color: var(--textStandard);
 }
 
-a.button {
-  color: var(--textStandard);
-  padding: 0.5rem 0.75rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  transition: ease-in-out 300ms;
-  white-space: nowrap;
-  width: fit-content;
+.contentArea .ctaLink {
+  font-size: 1.25rem;
+  margin-right: 3rem;
   text-decoration: none;
- }
-
- a.button__primary {
-   background-color: var(--pinkDark);
-   color: var(--textStandard);
- }
-
- a.button__primary:hover {
-  color: var(--textStandard);
-  background-color: var(--blueLight);
+  border-bottom: 2px solid var(--pinkDark);
+  transition: all 0.5s ease;
 }
 
- a.button__secondary {
-  background-color: var(--pinkLight);
-  color: var(--textStandard);
- }
-
- a.button__secondary:hover {
-  color: var(--textStandard);
-  background-color: var(--blueLight);
- }
+.contentArea .ctaLink:hover {
+  border-bottom: 2px solid var(--blueLight);
+}
 
  .contentArea h1 {
-   display: none;
+   margin-top: 0;
+   font-size: 2rem;
  }
 
- .contentArea .blogPost h1 {
-   display: inline-block;
-   font-weight: normal;
-   font-size: 1.75rem;
+ main.contentArea p {
+   font-size: 1rem;
+  @media only screen and (min-width: 600px) {
+    font-size: 1.125rem;
+  }
  }
 
  blockquote {

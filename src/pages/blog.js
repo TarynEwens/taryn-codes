@@ -15,9 +15,9 @@ const BlogIndex = (props) => {
     <Layout location={props.location} title={title}>
       <SEO title="All posts" />
       <div className="blog">
-        <h2>Articles and Notes</h2>
+        <h1>Articles and Notes</h1>
         <p>Just things from my brain that I like to write down.</p>
-        <h3 class="blog__filters">Filter by category: </h3>
+        <h2 class="blog__filters">Filter by category: </h2>
         <ul className="blog__categories">
           <li><a href="/blog">All</a></li>
           <li><a href="/category/coding">Coding</a></li>

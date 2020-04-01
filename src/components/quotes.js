@@ -63,9 +63,11 @@ const Quotes = (props) => {
   }
 
   return (
-    <div className="footer__quotes">
-      <h3>Taryn's quote of the page:</h3>
-      <p>"{quoteOfTheDay}"</p>
+    <div className="footer__quotesWrapper">
+      <blockquote class="footer__quotes">
+        <p>"{quoteOfTheDay}"</p>
+        <p>- Taryn</p>
+      </blockquote>
     </div>
   )
 }

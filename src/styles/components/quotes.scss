@@ -7,7 +7,7 @@ Quotes component
 .footer__quotes {
   max-width: 90vw;
   text-align: center;
-  margin: 1rem auto;
+  margin: 1rem auto 3rem;
 
   @media only screen and (min-width: 1160px) {
     max-width: 28rem;
@@ -22,11 +22,11 @@ Quotes component
   }
 
   p {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
+
     @media only screen and (min-width: 1160px) {
       margin-bottom: 0
     }
-    
   }
 }
 

@@ -16,15 +16,22 @@ const Intro = (props) => {
       query={introQuery}
       render={data => {
         return (
-          <div className="intro">
-            <h1>Front-End<br/>Web Developer,</h1>
-            <h2>CSS fan, design enthusiast,<br/>and fluffy doggo lover.</h2>
-            <p>My name is Taryn and I’m an ex-confectioner turned web developer in Sydney, Australia. I love creating art with CSS and dabbling in design, but I'm most passionate about accessibility and diversity in the tech industry.</p>
-            <div className="intro__buttonGroup">
-              <a href="/about/" className="button button__primary">Learn more about me</a>
-              <a href="/blog/" className="button button__secondary">Check out my writing</a>
+          <section className="intro">
+            <div>
+              <h1>Front-End Web Developer,</h1>
+              <h2>CSS fan, design enthusiast, and doggo lover.</h2>
+              <p>My name is Taryn and I’m an ex-confectioner turned web developer in Sydney, Australia. I love creating art with CSS and dabbling in design, but I'm most passionate about accessibility and diversity in the tech industry.</p>
+              <div className="intro__ctaGroup">
+                <a href="/about/" className="ctaLink">Learn more about me &rarr;</a>
+                <a href="/blog/" className="ctaLink">Check out my writing &rarr;</a>
+              </div>
             </div>
-          </div>
+            <aside>
+              <img src="https://tarynewens.com/portfolio/wp-content/uploads/2020/04/Webp.net-resizeimage-1.jpg" alt="Taryn smiling at the camera while sitting at her home office desk with monitor, laptop on stand, pink keyboard and small pot plants."/>
+              <img src="https://tarynewens.com/portfolio/wp-content/uploads/2019/12/speaking-thanks.jpg" alt="Taryn finishing a talk at SydCSS with her hands in the air and 'Thanks!' on the screen behind"/>
+            </aside>
+          </section>
+
         )
       }}
     />
