@@ -14,7 +14,7 @@ const BlogIndex = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title="All posts" />
-      <div className="blog">
+      <section className="blog">
         <h1>Articles and Notes</h1>
         <p>Just things from my brain that I like to write down.</p>
         <h2 class="blog__filters">Filter by category: </h2>
@@ -24,33 +24,30 @@ const BlogIndex = (props) => {
           <li><a href="/category/diversity-and-inclusion">Diversity and Inclusion</a></li>
         </ul>
         <hr/>
-      </div>
-      {posts.slice(0).map(({ node }) => {
-        return (
-          <div key={node.slug} className="blog">
-            <h3>
-              <Link to={`${postPrefix}/${node.slug}`}>
+      </section>
+      <section>
+        <ul className="blogList">
+        {posts.slice(0).map(({ node }) => {
+          return (
+            <li key={node.slug}>
+            <Link style={{ boxShadow: `none` }} to={`${postPrefix}/${node.slug}`}>
                 {node.title}
               </Link>
-            </h3>
-            <small>{node.date}</small>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: node.excerpt,
-              }}
-            />
-          </div>
-        )
-      })}
+              <small>{node.date}</small>
+            </li>
+          )
+        })}
+        </ul>
+      </section>
       <hr/>
-      <div>
+      <section>
         <h2>My writing on other sites</h2>
         <ul className="blog__externalList">
           <li><a href="https://www.projectf.com.au/blog/2020/1/30/alternative-paths-to-software-engineering-for-women">Alternative paths to software engineering for women</a></li>
           <li><a href="https://medium.com/finder-tech/imposter-syndrome-all-the-way-up-9d90753ad38c">Imposter syndrome all the way up</a></li>
           <li><a href="https://medium.com/finder-tech/analysing-our-engineering-teams-key-values-e9f79dd4391e">Analysing our engineering teams key values</a></li>
         </ul>
-      </div>
+      </section>
     </Layout>
   )
 }

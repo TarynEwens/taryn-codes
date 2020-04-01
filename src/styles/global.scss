@@ -63,44 +63,42 @@ a:hover {
   border-bottom: 2px solid var(--blueLight);
 }
 
-.contentArea a {
+.contentArea a,
+footer a {
   color: var(--blueDark);
-  text-decoration: underline;
-}
-
-.contentArea a:hover {
-  color: var(--textStandard);
-}
-
-.contentArea .ctaLink {
-  font-size: 1.25rem;
-  margin-right: 3rem;
   text-decoration: none;
   border-bottom: 2px solid var(--pinkDark);
   transition: all 0.5s ease;
 }
 
-.contentArea .ctaLink:hover {
+.contentArea a:hover,
+footer a:hover {
+  color: var(--textStandard);
   border-bottom: 2px solid var(--blueLight);
 }
 
- .contentArea h1 {
-   margin-top: 0;
-   font-size: 2rem;
- }
+.contentArea .ctaLink {
+  font-size: 1.25rem;
+  margin-right: 3rem;
+}
 
- main.contentArea p {
-   font-size: 1rem;
+.contentArea h1 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+main.contentArea p {
+  font-size: 1rem;
   @media only screen and (min-width: 600px) {
     font-size: 1.125rem;
   }
- }
+}
 
- blockquote {
-   border-left: 0.32813rem solid var(--pinkLight);
- }
+blockquote {
+  border-left: 0.32813rem solid var(--pinkLight);
+}
 
- .otherPage {
+.otherPage {
   @media only screen and (max-width: 600px) {
     h2 {
       margin-top: 0;

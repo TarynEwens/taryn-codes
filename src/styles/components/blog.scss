@@ -16,6 +16,18 @@ Blog styles
   margin-left: 0;
 }
 
+.blog__categories > li > a,
+.blog__externalList > li > a {
+  border-bottom: 0;
+  text-decoration: underline;
+}
+
+.blog__categories > li > a:hover,
+.blog__externalList > li > a:hover {
+  border-bottom: 0;
+  text-decoration: none;
+}
+
 .blog__categories li {
   margin-right: 2rem;
 }
@@ -27,4 +39,21 @@ Blog styles
 
 .blogPost hr:last-of-type{
   margin-bottom: 6rem !important;
+}
+
+.blogList {
+  list-style: none;
+  margin: 4rem 0;
+}
+
+.blogList li {
+  margin-bottom: 2.5rem;
+}
+
+.blogList a {
+  font-size: 1.25rem;
+}
+
+.blogList small {
+  display: block;
 }

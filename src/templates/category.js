@@ -32,23 +32,14 @@ const CategoryTemplate = (props) => {
         </div>
         {posts.map(({ node }) => {
           return (
-            <div key={node.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
+            <ul key={node.slug}>
+              <li>
               <Link style={{ boxShadow: `none` }} to={`${postPrefix}/${node.slug}`}>
                   {node.title}
                 </Link>
-              </h3>
-              <small>{node.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.excerpt,
-                }}
-              />
-            </div>
+                <small>{node.date}</small>
+              </li>
+            </ul>
           )
         })}
         <hr/>
