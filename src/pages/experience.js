@@ -13,7 +13,8 @@ const Experience = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title={page.title} />
-      <div dangerouslySetInnerHTML={{__html: page.content}} className="experience"></div>
+      <h1>{page.title}</h1>
+      <div dangerouslySetInnerHTML={{__html: page.content}}></div>
     </Layout>
   )
 }
