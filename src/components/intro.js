@@ -27,7 +27,7 @@ const Intro = (props) => {
               </div>
             </div>
             <aside>
-              <img src="https://tarynewens.com/portfolio/wp-content/uploads/2020/04/Webp.net-resizeimage-1.jpg" alt="Taryn smiling at the camera while sitting at her home office desk with monitor, laptop on stand, pink keyboard and small pot plants."/>
+              <img src="https://tarynewens.com/portfolio/wp-content/uploads/2020/04/Webp.net-resizeimage-1-min-2.jpg" alt="Taryn smiling at the camera while sitting at her home office desk with monitor, laptop on stand, pink keyboard and small pot plants."/>
               <img src="https://tarynewens.com/portfolio/wp-content/uploads/2019/12/speaking-thanks.jpg" alt="Taryn finishing a talk at SydCSS with her hands in the air and 'Thanks!' on the screen behind"/>
             </aside>
           </section>
