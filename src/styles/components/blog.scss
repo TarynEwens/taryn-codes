@@ -61,3 +61,7 @@ Blog styles
 .blogPost ul {
   margin-left: 1.25rem;
 }
+
+.blogPost img {
+  object-fit: contain;
+}
