@@ -32,13 +32,17 @@ const CategoryTemplate = (props) => {
         </div>
         {posts.map(({ node }) => {
           return (
-            <ul key={node.slug}>
-              <li>
-              <Link style={{ boxShadow: `none` }} to={`${postPrefix}/${node.slug}`}>
-                  {node.title}
-                </Link>
-                <small>{node.date}</small>
-              </li>
+            <ul className="blogList">
+              {posts.slice(0).map(({ node }) => {
+                return (
+                  <li key={node.slug}>
+                  <Link style={{ boxShadow: `none` }} to={`${postPrefix}/${node.slug}`}>
+                      {node.title}
+                    </Link>
+                    <small>{node.date}</small>
+                  </li>
+                )
+              })}
             </ul>
           )
         })}
