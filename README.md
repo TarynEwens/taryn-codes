@@ -1,8 +1,10 @@
 # Portfolio website for Taryn Ewens, Front-End Developer in Sydney, Australia.
 
-This repo is for my porfolio site found at [taryn.codes](https://www.taryn.codes). I used a base of @justinwhall's [Gatsby](https://github.com/gatsbyjs/gatsby/) + Headless WordPress + Netlify Starter for this project.
+This repo is for my porfolio site previously found at [taryn.codes](https://www.taryn.codes). I used a base of @justinwhall's [Gatsby](https://github.com/gatsbyjs/gatsby/) + Headless WordPress + Netlify Starter for this project.
 
 It includes support for continuous integration with Netlify. Publishing posts call the Netlify build hook. Deploy to Netlify stage or production enviroment when updating a WordPress post or page.
+
+**This portfolio is no longer in use.**
 
 ## Dependencies
 
